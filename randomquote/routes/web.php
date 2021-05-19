@@ -20,3 +20,7 @@ $router->get('/', function () use ($router) {
 $router->get('/index', [
     'as' => 'index', 'uses' => 'Controller@index'
 ]);
+
+$router->get('/random-images', [
+    'as' => 'randomImages', 'uses' => 'RandomImages@show'
+]);
